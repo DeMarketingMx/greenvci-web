@@ -49,7 +49,7 @@
         <button>EN</button>
         <button>KO</button>
       </div>
-      <a href="contacto.html" class="nav__cta">Cotizar
+      <a href="contacto.html" class="nav__cta" data-i18n="nav.cta">Cotizar
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -146,7 +146,7 @@
   <div class="container">
     <div class="principios__grid">
       <div class="principios__intro reveal">
-        <div class="eyebrow">Nuestros tres principios</div>
+        <div class="eyebrow" data-i18n="home.principles.eyebrow">Nuestros tres principios</div>
         <h2 class="display-lg">Una sola idea,<br><span class="serif-accent">tres caminos</span> de regreso a la tierra.</h2>
         <p class="body-lg">Cada producto GreenVCI está diseñado para cerrar su propio ciclo — usar, volver a usar, y finalmente devolver al suelo lo que de él vino. Sin metales pesados. Sin residuos tóxicos. Sin excepciones.</p>
       </div>
@@ -158,12 +158,12 @@
             <div class="principio__icon" data-ilu="iconReutilizable"></div>
           </div>
           <div class="principio__text">
-            <h3>Reutilizable</h3>
-            <p>Nuestros emisores y films se recolocan múltiples veces — reducen consumo de packaging hasta un 70%.</p>
+            <h3 data-i18n="home.prin.reusable.title">Reutilizable</h3>
+            <p data-i18n="home.prin.reusable.desc">Nuestros emisores y films se recolocan múltiples veces — reducen consumo de packaging hasta un 70%.</p>
           </div>
-          <div class="principio__arrow">
+          <a class="principio__arrow" href="sostenibilidad.html#reutilizable">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-          </div>
+          </a>
         </div>
         <div class="principio">
           <div class="principio__visual">
@@ -171,12 +171,12 @@
             <div class="principio__icon" data-ilu="iconReciclable"></div>
           </div>
           <div class="principio__text">
-            <h3>Reciclable</h3>
-            <p>Polietileno y papel formulados para reingresar al flujo de reciclaje municipal o industrial sin contaminación.</p>
+            <h3 data-i18n="home.prin.recyclable.title">Reciclable</h3>
+            <p data-i18n="home.prin.recyclable.desc">Polietileno y papel formulados para reingresar al flujo de reciclaje municipal o industrial sin contaminación.</p>
           </div>
-          <div class="principio__arrow">
+          <a class="principio__arrow" href="sostenibilidad.html#reciclable">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-          </div>
+          </a>
         </div>
         <div class="principio">
           <div class="principio__visual">
@@ -184,12 +184,12 @@
             <div class="principio__icon" data-ilu="iconBiodegradable"></div>
           </div>
           <div class="principio__text">
-            <h3>Biodegradable</h3>
-            <p>Compuestos VCI orgánicos que se descomponen en meses dejando cero residuos persistentes en suelo o agua.</p>
+            <h3 data-i18n="home.prin.biodeg.title">Biodegradable</h3>
+            <p data-i18n="home.prin.biodeg.desc">Compuestos VCI orgánicos que se descomponen en meses dejando cero residuos persistentes en suelo o agua.</p>
           </div>
-          <div class="principio__arrow">
+          <a class="principio__arrow" href="sostenibilidad.html#biodegradable">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -201,14 +201,75 @@
   <div class="ciencia__deco"></div>
   <div class="container">
     <div class="ciencia__content reveal">
-      <div class="eyebrow eyebrow--dark" style="justify-content:center">La ciencia en cuatro pasos</div>
+      <div class="eyebrow eyebrow--dark" style="justify-content:center" data-i18n="home.ciencia.eyebrow">La ciencia en cuatro pasos</div>
       <p class="ciencia__statement">
         Una molécula VCI se evapora dentro de un espacio cerrado, <em>se adhiere a cada superficie metálica</em> y forma una <strong>capa protectora invisible</strong> que detiene la corrosión — incluso donde tus manos no llegan.
       </p>
     </div>
     <div class="ciencia__diagram reveal reveal--d2">
-      <h4>El ciclo VCI</h4>
-      <div data-ilu="diagramaVCI"></div>
+      <h4 data-i18n="home.ciencia.diagram.title">El ciclo VCI</h4>
+      <div class="vci-cycle" id="vciCycle">
+        <div class="vci-cycle__track">
+          <svg class="vci-cycle__svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="200" cy="200" r="140" stroke="rgba(45,106,79,0.25)" stroke-width="1.5" stroke-dasharray="6 6"/>
+            <circle class="vci-orbit" cx="200" cy="200" r="140" stroke="url(#orbitGrad)" stroke-width="2.5" stroke-dasharray="220 660" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="orbitGrad" x1="200" y1="60" x2="340" y2="200" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#4ade80"/>
+                <stop offset="100%" stop-color="#16a34a" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="vci-cycle__center">
+            <div class="vci-cycle__center-pulse"></div>
+            <div class="vci-cycle__center-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="1.5"><path d="M12 2L8 6l4 4 4-4-4-4zM2 12l4 4 4-4-4-4-4 4zM22 12l-4-4-4 4 4 4 4-4zM12 22l4-4-4-4-4 4 4 4z"/></svg>
+            </div>
+            <span class="vci-cycle__center-label">VCI</span>
+          </div>
+          <div class="vci-cycle__step vci-cycle__step--1">
+            <div class="vci-cycle__node">
+              <span class="vci-cycle__num">01</span>
+              <div class="vci-cycle__dot"></div>
+            </div>
+            <div class="vci-cycle__info">
+              <strong data-i18n="home.vci.s1">SELLADO</strong>
+              <span data-i18n-html="home.vci.s1.desc">El producto metálico<br>es embalado con VCI</span>
+            </div>
+          </div>
+          <div class="vci-cycle__step vci-cycle__step--2">
+            <div class="vci-cycle__node">
+              <span class="vci-cycle__num">02</span>
+              <div class="vci-cycle__dot"></div>
+            </div>
+            <div class="vci-cycle__info">
+              <strong data-i18n="home.vci.s2">DIFUSIÓN</strong>
+              <span data-i18n-html="home.vci.s2.desc">Moléculas VCI se<br>evaporan y llenan el espacio</span>
+            </div>
+          </div>
+          <div class="vci-cycle__step vci-cycle__step--3">
+            <div class="vci-cycle__node">
+              <span class="vci-cycle__num">03</span>
+              <div class="vci-cycle__dot"></div>
+            </div>
+            <div class="vci-cycle__info">
+              <strong data-i18n="home.vci.s3">ADSORCIÓN</strong>
+              <span data-i18n-html="home.vci.s3.desc">Capa monomolecular<br>se forma en el metal</span>
+            </div>
+          </div>
+          <div class="vci-cycle__step vci-cycle__step--4">
+            <div class="vci-cycle__node">
+              <span class="vci-cycle__num">04</span>
+              <div class="vci-cycle__dot"></div>
+            </div>
+            <div class="vci-cycle__info">
+              <strong data-i18n="home.vci.s4">PROTECCIÓN</strong>
+              <span data-i18n-html="home.vci.s4.desc">Corrosión bloqueada<br>meses o años</span>
+            </div>
+          </div>
+        </div>
+        <div class="vci-cycle__particles" id="vciParticles"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -218,7 +279,7 @@
   <div class="container">
     <div class="productos__header">
       <div class="productos__header-txt reveal">
-        <div class="eyebrow">Línea de productos</div>
+        <div class="eyebrow" data-i18n="home.prod.eyebrow">Línea de productos</div>
         <h2 class="display-lg">Nueve formas<br>de proteger <span class="serif-accent">el mismo metal</span>.</h2>
       </div>
       <div class="productos__header-meta reveal reveal--d2">
@@ -233,9 +294,9 @@
           <img src="images/product-vci-film-extrusion-machine.jpg" alt="VCI Film — extrusión industrial" loading="lazy">
         </div>
         <div class="producto__body">
-          <div class="producto__num">01 / 09 · Destacado</div>
-          <h3 class="producto__title">VCI Film</h3>
-          <p class="producto__desc">Film de polietileno transparente o pigmentado impregnado con VCI. El formato más versátil — envuelve, embolsa, cubre, protege. Desde 30 µm hasta 200 µm, en ancho hasta 6 metros.</p>
+          <div class="producto__num" data-i18n="home.prod.p01.num">01 / 09 · Destacado</div>
+          <h3 class="producto__title" data-i18n="home.prod.p01.title">VCI Film</h3>
+          <p class="producto__desc" data-i18n="home.prod.p01.desc">Film de polietileno transparente o pigmentado impregnado con VCI. El formato más versátil — envuelve, embolsa, cubre, protege. Desde 30 µm hasta 200 µm, en ancho hasta 6 metros.</p>
           <div class="producto__tags">
             <span class="producto__tag">Transparente</span>
             <span class="producto__tag">3 capas</span>
@@ -254,10 +315,10 @@
           <img src="images/product-vci-powder-anticorrosion.jpg" alt="VCI Polvo anticorrosivo" loading="lazy">
         </div>
         <div class="producto__body">
-          <div class="producto__num">02 / 09</div>
-          <h3 class="producto__title">VCI Polvo</h3>
-          <p class="producto__desc">Inhibidores en polvo fino — se esparcen dentro de piezas huecas, cavidades y geometrías complejas donde otros métodos no llegan.</p>
-          <a href="#" class="producto__link">Ficha técnica
+          <div class="producto__num" data-i18n="home.prod.p02.num">02 / 09</div>
+          <h3 class="producto__title" data-i18n="home.prod.p02.title">VCI Polvo</h3>
+          <p class="producto__desc" data-i18n="home.prod.p02.desc">Inhibidores en polvo fino — se esparcen dentro de piezas huecas, cavidades y geometrías complejas donde otros métodos no llegan.</p>
+          <a href="#" class="producto__link" data-i18n="home.prod.datasheet">Ficha técnica
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -268,10 +329,10 @@
           <img src="images/product-vci-emitter-capsule.jpg" alt="VCI Emisor cápsula" loading="lazy">
         </div>
         <div class="producto__body">
-          <div class="producto__num">03 / 09</div>
-          <h3 class="producto__title">VCI Emisor</h3>
-          <p class="producto__desc">Cápsulas que liberan vapor continuamente dentro de gabinetes eléctricos, tableros de control y bahías de carga.</p>
-          <a href="#" class="producto__link">Ficha técnica
+          <div class="producto__num" data-i18n="home.prod.p03.num">03 / 09</div>
+          <h3 class="producto__title" data-i18n="home.prod.p03.title">VCI Emisor</h3>
+          <p class="producto__desc" data-i18n="home.prod.p03.desc">Cápsulas que liberan vapor continuamente dentro de gabinetes eléctricos, tableros de control y bahías de carga.</p>
+          <a href="#" class="producto__link" data-i18n="home.prod.datasheet">Ficha técnica
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -282,10 +343,10 @@
           <img src="images/product-vci-liquid-spray-application.jpg" alt="VCI Líquido aplicación spray" loading="lazy">
         </div>
         <div class="producto__body">
-          <div class="producto__num">04 / 09</div>
-          <h3 class="producto__title">VCI Líquido</h3>
-          <p class="producto__desc">Formulaciones base-agua para aplicación por inmersión, aspersión o flushing en líneas de producción continuas.</p>
-          <a href="#" class="producto__link">Ficha técnica
+          <div class="producto__num" data-i18n="home.prod.p04.num">04 / 09</div>
+          <h3 class="producto__title" data-i18n="home.prod.p04.title">VCI Líquido</h3>
+          <p class="producto__desc" data-i18n="home.prod.p04.desc">Formulaciones base-agua para aplicación por inmersión, aspersión o flushing en líneas de producción continuas.</p>
+          <a href="#" class="producto__link" data-i18n="home.prod.datasheet">Ficha técnica
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -296,10 +357,10 @@
           <img src="images/product-vci-paper-wrapping-metal.jpg" alt="VCI Papel envolviendo metal" loading="lazy">
         </div>
         <div class="producto__body">
-          <div class="producto__num">05 / 09</div>
-          <h3 class="producto__title">VCI Papel</h3>
-          <p class="producto__desc">Papel kraft impregnado o recubierto — para envolver piezas de precisión, interfoliado entre láminas de acero o forrado de contenedores.</p>
-          <a href="#" class="producto__link">Ficha técnica
+          <div class="producto__num" data-i18n="home.prod.p05.num">05 / 09</div>
+          <h3 class="producto__title" data-i18n="home.prod.p05.title">VCI Papel</h3>
+          <p class="producto__desc" data-i18n="home.prod.p05.desc">Papel kraft impregnado o recubierto — para envolver piezas de precisión, interfoliado entre láminas de acero o forrado de contenedores.</p>
+          <a href="#" class="producto__link" data-i18n="home.prod.datasheet">Ficha técnica
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -310,10 +371,10 @@
           <img src="images/product-vci-masterbatch-pellets.jpg" alt="VCI Masterbatch pellets" loading="lazy">
         </div>
         <div class="producto__body">
-          <div class="producto__num">06 / 09</div>
-          <h3 class="producto__title">VCI Masterbatch</h3>
-          <p class="producto__desc">Concentrado VCI en pellets para tus propias líneas de extrusión — fabrica tu empaque anticorrosivo a medida.</p>
-          <a href="#" class="producto__link">Ficha técnica
+          <div class="producto__num" data-i18n="home.prod.p06.num">06 / 09</div>
+          <h3 class="producto__title" data-i18n="home.prod.p06.title">VCI Masterbatch</h3>
+          <p class="producto__desc" data-i18n="home.prod.p06.desc">Concentrado VCI en pellets para tus propias líneas de extrusión — fabrica tu empaque anticorrosivo a medida.</p>
+          <a href="#" class="producto__link" data-i18n="home.prod.datasheet">Ficha técnica
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -324,10 +385,10 @@
           <img src="images/product-vci-desiccant-packets.jpg" alt="VCI Desecante bolsitas" loading="lazy">
         </div>
         <div class="producto__body">
-          <div class="producto__num">07 / 09</div>
-          <h3 class="producto__title">VCI Desecante</h3>
-          <p class="producto__desc">Bolsitas con doble acción — absorben humedad y emiten VCI. Ideales para contenedores marítimos de larga travesía.</p>
-          <a href="#" class="producto__link">Ficha técnica
+          <div class="producto__num" data-i18n="home.prod.p07.num">07 / 09</div>
+          <h3 class="producto__title" data-i18n="home.prod.p07.title">VCI Desecante</h3>
+          <p class="producto__desc" data-i18n="home.prod.p07.desc">Bolsitas con doble acción — absorben humedad y emiten VCI. Ideales para contenedores marítimos de larga travesía.</p>
+          <a href="#" class="producto__link" data-i18n="home.prod.datasheet">Ficha técnica
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -338,10 +399,10 @@
           <img src="images/product-vci-cleaner-industrial-degreasing.jpg" alt="VCI Limpiador desengrase industrial" loading="lazy">
         </div>
         <div class="producto__body">
-          <div class="producto__num">08 / 09</div>
-          <h3 class="producto__title">VCI Limpiador</h3>
-          <p class="producto__desc">Desengrasantes industriales con inhibidores integrados — limpia y protege en un solo paso, sin enjuague secundario.</p>
-          <a href="#" class="producto__link">Ficha técnica
+          <div class="producto__num" data-i18n="home.prod.p08.num">08 / 09</div>
+          <h3 class="producto__title" data-i18n="home.prod.p08.title">VCI Limpiador</h3>
+          <p class="producto__desc" data-i18n="home.prod.p08.desc">Desengrasantes industriales con inhibidores integrados — limpia y protege en un solo paso, sin enjuague secundario.</p>
+          <a href="#" class="producto__link" data-i18n="home.prod.datasheet">Ficha técnica
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -352,10 +413,10 @@
           <img src="images/product-vci-fabrication-custom-packaging.jpg" alt="VCI Fabricación empaque a medida" loading="lazy">
         </div>
         <div class="producto__body">
-          <div class="producto__num">09 / 09</div>
-          <h3 class="producto__title">VCI Fabricación</h3>
-          <p class="producto__desc">Empaques a medida — bolsas, sobres, fundas y liners fabricados según las dimensiones exactas de tu equipo.</p>
-          <a href="#" class="producto__link">Ficha técnica
+          <div class="producto__num" data-i18n="home.prod.p09.num">09 / 09</div>
+          <h3 class="producto__title" data-i18n="home.prod.p09.title">VCI Fabricación</h3>
+          <p class="producto__desc" data-i18n="home.prod.p09.desc">Empaques a medida — bolsas, sobres, fundas y liners fabricados según las dimensiones exactas de tu equipo.</p>
+          <a href="#" class="producto__link" data-i18n="home.prod.datasheet">Ficha técnica
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -371,7 +432,7 @@
     <div class="lab-spotlight__overlay"></div>
   </div>
   <div class="lab-spotlight__content reveal">
-    <div class="eyebrow eyebrow--dark">Laboratorio propio · Incheon, Corea</div>
+    <div class="eyebrow eyebrow--dark" data-i18n="home.lab.eyebrow">Laboratorio propio · Incheon, Corea</div>
     <h2 class="display-lg" style="color:var(--white); margin-top:20px">
       30 años<br>desarrollando<br><span class="serif-accent">la molécula perfecta.</span>
     </h2>
@@ -379,20 +440,20 @@
     <div class="lab-spotlight__stats">
       <div class="lab-spotlight__stat">
         <div class="lab-spotlight__stat-v">2500h</div>
-        <div class="lab-spotlight__stat-l">Pruebas de corrosión acelerada por lote</div>
+        <div class="lab-spotlight__stat-l" data-i18n="home.lab.stat1.label">Pruebas de corrosión acelerada por lote</div>
       </div>
       <div class="lab-spotlight__stat">
         <div class="lab-spotlight__stat-v">120+</div>
-        <div class="lab-spotlight__stat-l">Referencias activas certificadas RoHS</div>
+        <div class="lab-spotlight__stat-l" data-i18n="home.lab.stat2.label">Referencias activas certificadas RoHS</div>
       </div>
       <div class="lab-spotlight__stat">
         <div class="lab-spotlight__stat-v">30+</div>
-        <div class="lab-spotlight__stat-l">Patentes de formulación registradas</div>
+        <div class="lab-spotlight__stat-l" data-i18n="home.lab.stat3.label">Patentes de formulación registradas</div>
       </div>
     </div>
     <div style="margin-top:40px; display:flex; gap:16px; flex-wrap:wrap">
-      <a href="#contacto" class="btn btn--primary">Hablar con un ingeniero →</a>
-      <a href="nosotros.html" class="btn btn--ghost-dark">Conocer el equipo</a>
+      <a href="#contacto" class="btn btn--primary" data-i18n="home.lab.cta1">Hablar con un ingeniero →</a>
+      <a href="nosotros.html" class="btn btn--ghost-dark" data-i18n="home.lab.cta2">Conocer el equipo</a>
     </div>
   </div>
 </section>
@@ -401,7 +462,7 @@
 <section class="industrias" id="industrias">
   <div class="container">
     <div class="industrias__header reveal">
-      <div class="eyebrow">Industrias que protegemos</div>
+      <div class="eyebrow" data-i18n="home.ind.eyebrow">Industrias que protegemos</div>
       <h2 class="display-lg">Desde un chip<br>hasta una <span class="serif-accent">plataforma offshore.</span></h2>
       <p class="body-lg" style="margin-left:auto; margin-right:auto">Seis sectores críticos donde la corrosión no es un inconveniente — es una pérdida económica medida en millones.</p>
     </div>
@@ -413,8 +474,8 @@
         </div>
         <div class="industria__overlay">
           <div class="industria__num">SECTOR 01</div>
-          <h3 class="industria__name">Automotriz</h3>
-          <p class="industria__desc">OEMs y Tier-1 protegen ensambles completos durante el transporte transoceánico.</p>
+          <h3 class="industria__name" data-i18n="home.ind.s1">Automotriz</h3>
+          <p class="industria__desc" data-i18n="home.ind.s1.desc">OEMs y Tier-1 protegen ensambles completos durante el transporte transoceánico.</p>
         </div>
       </div>
       <div class="industria reveal reveal--d1">
@@ -423,8 +484,8 @@
         </div>
         <div class="industria__overlay">
           <div class="industria__num">SECTOR 02</div>
-          <h3 class="industria__name">Tecnología</h3>
-          <p class="industria__desc">Semiconductores y electrónica de precisión en salas limpias.</p>
+          <h3 class="industria__name" data-i18n="home.ind.s2">Tecnología</h3>
+          <p class="industria__desc" data-i18n="home.ind.s2.desc">Semiconductores y electrónica de precisión en salas limpias.</p>
         </div>
       </div>
       <div class="industria reveal reveal--d2">
@@ -433,8 +494,8 @@
         </div>
         <div class="industria__overlay">
           <div class="industria__num">SECTOR 03</div>
-          <h3 class="industria__name">Industria pesada</h3>
-          <p class="industria__desc">Acerías y plantas de procesamiento con exposición continua.</p>
+          <h3 class="industria__name" data-i18n="home.ind.s3">Industria pesada</h3>
+          <p class="industria__desc" data-i18n="home.ind.s3.desc">Acerías y plantas de procesamiento con exposición continua.</p>
         </div>
       </div>
       <div class="industria reveal reveal--d3">
@@ -443,8 +504,8 @@
         </div>
         <div class="industria__overlay">
           <div class="industria__num">SECTOR 04</div>
-          <h3 class="industria__name">Petróleo y gas</h3>
-          <p class="industria__desc">Plataformas offshore y tuberías en ambientes marinos agresivos.</p>
+          <h3 class="industria__name" data-i18n="home.ind.s4">Petróleo y gas</h3>
+          <p class="industria__desc" data-i18n="home.ind.s4.desc">Plataformas offshore y tuberías en ambientes marinos agresivos.</p>
         </div>
       </div>
       <div class="industria reveal reveal--d4">
@@ -453,8 +514,8 @@
         </div>
         <div class="industria__overlay">
           <div class="industria__num">SECTOR 05</div>
-          <h3 class="industria__name">Militar</h3>
-          <p class="industria__desc">Vehículos y armamento en almacenamiento estratégico de largo plazo.</p>
+          <h3 class="industria__name" data-i18n="home.ind.s5">Militar</h3>
+          <p class="industria__desc" data-i18n="home.ind.s5.desc">Vehículos y armamento en almacenamiento estratégico de largo plazo.</p>
         </div>
       </div>
       <div class="industria industria--tall reveal reveal--d5">
@@ -463,8 +524,8 @@
         </div>
         <div class="industria__overlay">
           <div class="industria__num">SECTOR 06</div>
-          <h3 class="industria__name">Naviera y marina</h3>
-          <p class="industria__desc">Contenedores de acero y cargas metálicas cruzando océanos durante semanas sin intervención.</p>
+          <h3 class="industria__name" data-i18n="home.ind.s6">Naviera y marina</h3>
+          <p class="industria__desc" data-i18n="home.ind.s6.desc">Contenedores de acero y cargas metálicas cruzando océanos durante semanas sin intervención.</p>
         </div>
       </div>
     </div>
@@ -477,26 +538,26 @@
     <div class="ciclo__grid">
       <div class="ciclo__visual reveal" data-ilu="cicloVida" data-parallax="-30"></div>
       <div class="ciclo__content reveal reveal--d2">
-        <div class="eyebrow">Compromiso ESG</div>
+        <div class="eyebrow" data-i18n="home.esg.eyebrow">Compromiso ESG</div>
         <h2 class="display-lg">El ciclo<br>que no deja <span class="serif-accent">huella.</span></h2>
         <p class="body-lg">Cada lote de GreenVCI se diseña bajo el principio de economía circular: desde el origen de la materia prima hasta el final de su vida útil. Esto no es marketing — es documentación verificable en cada producto.</p>
 
         <div class="ciclo__metrics">
           <div class="ciclo__metric">
             <div class="ciclo__metric-v">100%</div>
-            <div class="ciclo__metric-l">Packaging reciclable de origen</div>
+            <div class="ciclo__metric-l" data-i18n="home.esg.m1.label">Packaging reciclable de origen</div>
           </div>
           <div class="ciclo__metric">
             <div class="ciclo__metric-v">0</div>
-            <div class="ciclo__metric-l">Metales pesados · nitritos · cromatos</div>
+            <div class="ciclo__metric-l" data-i18n="home.esg.m2.label">Metales pesados · nitritos · cromatos</div>
           </div>
           <div class="ciclo__metric">
             <div class="ciclo__metric-v">70%</div>
-            <div class="ciclo__metric-l">Reducción de residuos vs. aceites</div>
+            <div class="ciclo__metric-l" data-i18n="home.esg.m3.label">Reducción de residuos vs. aceites</div>
           </div>
           <div class="ciclo__metric">
             <div class="ciclo__metric-v">RoHS</div>
-            <div class="ciclo__metric-l">Conformidad total · ISO 9001 · 14001</div>
+            <div class="ciclo__metric-l" data-i18n="home.esg.m4.label">Conformidad total · ISO 9001 · 14001</div>
           </div>
         </div>
       </div>
@@ -509,7 +570,7 @@
   <div class="container">
     <div class="comparativa__header">
       <div class="reveal">
-        <div class="eyebrow">Por qué GreenVCI</div>
+        <div class="eyebrow" data-i18n="home.comp.eyebrow">Por qué GreenVCI</div>
         <h2 class="display-lg">No todo lo que<br><span class="serif-accent">protege</span> es igual.</h2>
       </div>
       <div class="reveal reveal--d2">
@@ -518,31 +579,31 @@
     </div>
 
     <div class="comparativa__tabla reveal">
-      <div class="comparativa__col-head comparativa__col-head--feature">Criterio</div>
-      <div class="comparativa__col-head comparativa__col-head--old">Métodos tradicionales</div>
+      <div class="comparativa__col-head comparativa__col-head--feature" data-i18n="home.comp.col.criteria">Criterio</div>
+      <div class="comparativa__col-head comparativa__col-head--old" data-i18n="home.comp.col.old">Métodos tradicionales</div>
       <div class="comparativa__col-head comparativa__col-head--new">GreenVCI</div>
 
-      <div class="comparativa__cell comparativa__cell--feature">Toxicidad</div>
+      <div class="comparativa__cell comparativa__cell--feature" data-i18n="home.comp.row1">Toxicidad</div>
       <div class="comparativa__cell comparativa__cell--old"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Aceites y recubrimientos con solventes</div>
       <div class="comparativa__cell comparativa__cell--new"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Vapor VCI 100% no tóxico</div>
 
-      <div class="comparativa__cell comparativa__cell--feature">Ciclo del empaque</div>
+      <div class="comparativa__cell comparativa__cell--feature" data-i18n="home.comp.row2">Ciclo del empaque</div>
       <div class="comparativa__cell comparativa__cell--old"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Desechable, un solo uso</div>
       <div class="comparativa__cell comparativa__cell--new"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Reutilizable y reciclable</div>
 
-      <div class="comparativa__cell comparativa__cell--feature">Limpieza post-uso</div>
+      <div class="comparativa__cell comparativa__cell--feature" data-i18n="home.comp.row3">Limpieza post-uso</div>
       <div class="comparativa__cell comparativa__cell--old"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Desengrase obligatorio con solventes</div>
       <div class="comparativa__cell comparativa__cell--new"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Cero limpieza — listo para usar</div>
 
-      <div class="comparativa__cell comparativa__cell--feature">Disposición final</div>
+      <div class="comparativa__cell comparativa__cell--feature" data-i18n="home.comp.row4">Disposición final</div>
       <div class="comparativa__cell comparativa__cell--old"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Residuo peligroso</div>
       <div class="comparativa__cell comparativa__cell--new"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Biodegradable · certificación RoHS</div>
 
-      <div class="comparativa__cell comparativa__cell--feature">Cobertura</div>
+      <div class="comparativa__cell comparativa__cell--feature" data-i18n="home.comp.row5">Cobertura</div>
       <div class="comparativa__cell comparativa__cell--old"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Solo superficies de contacto</div>
       <div class="comparativa__cell comparativa__cell--new"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Cavidades, roscas, interiores</div>
 
-      <div class="comparativa__cell comparativa__cell--feature">Duración autónoma</div>
+      <div class="comparativa__cell comparativa__cell--feature" data-i18n="home.comp.row6">Duración autónoma</div>
       <div class="comparativa__cell comparativa__cell--old"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Reaplicación frecuente</div>
       <div class="comparativa__cell comparativa__cell--new"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Hasta 24 meses sin intervención</div>
     </div>
@@ -552,7 +613,7 @@
 <!-- CLIENTES -->
 <section class="clientes">
   <div class="container clientes__header reveal">
-    <div class="eyebrow eyebrow--dark" style="justify-content:center">Confían en nosotros</div>
+    <div class="eyebrow eyebrow--dark" style="justify-content:center" data-i18n="home.clients.eyebrow">Confían en nosotros</div>
     <h2 class="display-lg" style="color:#FFF; margin-top:20px">500+ plantas industriales<br>en <span class="serif-accent">50+ países.</span></h2>
   </div>
   <div class="clientes__track">
@@ -594,7 +655,7 @@
   <div class="container">
     <div class="contacto__grid">
       <div class="contacto__info reveal">
-        <div class="eyebrow eyebrow--dark">Hablemos</div>
+        <div class="eyebrow eyebrow--dark" data-i18n="home.contact.eyebrow">Hablemos</div>
         <h2 class="display-lg">¿Corrosión?<br><span class="serif-accent">Tenemos el plan.</span></h2>
         <p class="body-lg" style="color:rgba(255,255,255,0.7); max-width:50ch">Cuéntanos sobre tu proceso, volúmenes y metales a proteger. Un ingeniero responde en menos de 24 horas con una recomendación técnica específica.</p>
 
@@ -604,7 +665,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
-              <h4>Casa matriz</h4>
+              <h4 data-i18n="home.contact.hq">Casa matriz</h4>
               <p>GreenVCI R&amp;D Co., Ltd.<br>Incheon · República de Corea</p>
             </div>
           </div>
@@ -613,7 +674,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
             </div>
             <div>
-              <h4>Teléfono</h4>
+              <h4 data-i18n="home.contact.phone.label">Teléfono</h4>
               <p>+82 32 562 2097</p>
             </div>
           </div>
@@ -622,7 +683,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
             </div>
             <div>
-              <h4>Email</h4>
+              <h4 data-i18n="home.contact.email.label">Email</h4>
               <p>info@greenvci.com<br>ventas@greenvci.com</p>
             </div>
           </div>
@@ -631,25 +692,25 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 014 10 15 15 0 01-4 10 15 15 0 01-4-10 15 15 0 014-10z"/></svg>
             </div>
             <div>
-              <h4>Global</h4>
-              <p>Distribuidores oficiales en 50+ países</p>
+              <h4 data-i18n="home.contact.global">Global</h4>
+              <p data-i18n="home.contact.global.val">Distribuidores oficiales en 50+ países</p>
             </div>
           </div>
         </div>
       </div>
 
       <form class="contacto__form reveal reveal--d2" onsubmit="event.preventDefault(); this.querySelector('.f-submit').textContent = '✓ Mensaje enviado'; setTimeout(()=>this.reset(),2000);">
-        <h3>Solicita una recomendación</h3>
+        <h3 data-i18n="home.contact.form.title">Solicita una recomendación</h3>
         <div class="f-row">
-          <div class="f-group"><label>Nombre *</label><input type="text" placeholder="Tu nombre" required></div>
-          <div class="f-group"><label>Empresa *</label><input type="text" placeholder="Tu empresa" required></div>
+          <div class="f-group"><label data-i18n="home.contact.name">Nombre *</label><input type="text" placeholder="Tu nombre" required></div>
+          <div class="f-group"><label data-i18n="home.contact.company">Empresa *</label><input type="text" placeholder="Tu empresa" required></div>
         </div>
         <div class="f-row">
-          <div class="f-group"><label>Email *</label><input type="email" placeholder="tu@empresa.com" required></div>
-          <div class="f-group"><label>Teléfono</label><input type="tel" placeholder="+52 55 0000 0000"></div>
+          <div class="f-group"><label data-i18n="home.contact.email.f">Email *</label><input type="email" placeholder="tu@empresa.com" required></div>
+          <div class="f-group"><label data-i18n="home.contact.phone.f">Teléfono</label><input type="tel" placeholder="+52 55 0000 0000"></div>
         </div>
         <div class="f-group">
-          <label>Industria</label>
+          <label data-i18n="home.contact.industry.f">Industria</label>
           <select>
             <option>Automotriz</option>
             <option>Electrónica / Semiconductores</option>
@@ -683,7 +744,7 @@
         <p>Líderes globales en tecnología VCI sostenible desde 1994. Reutilizable · Reciclable · Biodegradable.</p>
       </div>
       <div class="footer__col">
-        <h5>Productos</h5>
+        <h5 data-i18n="footer.col.products">Productos</h5>
         <a href="productos/vci-film.html">VCI Film</a>
         <a href="productos/vci-polvo.html">VCI Polvo</a>
         <a href="productos/vci-masterbatch.html">VCI Masterbatch</a>
@@ -695,19 +756,19 @@
         <a href="productos/vci-fabricacion.html">VCI Fabricación</a>
       </div>
       <div class="footer__col">
-        <h5>Empresa</h5>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="certificaciones.html">Certificaciones</a>
-        <a href="noticias.html">Noticias</a>
-        <a href="carreras.html">Carreras</a>
-        <a href="distribuidores.html">Distribuidores</a>
+        <h5 data-i18n="footer.col.company">Empresa</h5>
+        <a href="nosotros.html" data-i18n="footer.about">Nosotros</a>
+        <a href="certificaciones.html" data-i18n="footer.certs">Certificaciones</a>
+        <a href="noticias.html" data-i18n="footer.news">Noticias</a>
+        <a href="carreras.html" data-i18n="footer.careers">Carreras</a>
+        <a href="distribuidores.html" data-i18n="footer.distributors">Distribuidores</a>
       </div>
       <div class="footer__col">
-        <h5>Soporte</h5>
-        <a href="contacto.html">Contacto</a>
-        <a href="fichas-tecnicas.html">Fichas Técnicas</a>
+        <h5 data-i18n="footer.col.support">Soporte</h5>
+        <a href="contacto.html" data-i18n="footer.contact">Contacto</a>
+        <a href="fichas-tecnicas.html" data-i18n="footer.datasheets">Fichas Técnicas</a>
         <a href="faq.html">Preguntas Frecuentes</a>
-        <a href="recursos.html">Recursos</a>
+        <a href="recursos.html" data-i18n="footer.resources">Recursos</a>
       </div>
     </div>
     <div class="footer__bottom">
@@ -724,5 +785,21 @@
 <script src="animaciones.js"></script>
   <script src="i18n.js"></script>
   <script src="lang.js"></script>
+  <script>
+    (function() {
+      var container = document.getElementById('vciParticles');
+      if (!container) return;
+      for (var i = 0; i < 18; i++) {
+        var p = document.createElement('div');
+        p.className = 'vci-particle';
+        p.style.left = (20 + Math.random() * 60) + '%';
+        p.style.bottom = (5 + Math.random() * 30) + '%';
+        p.style.animationDuration = (3 + Math.random() * 4) + 's';
+        p.style.animationDelay = (Math.random() * 5) + 's';
+        p.style.width = p.style.height = (2 + Math.random() * 3) + 'px';
+        container.appendChild(p);
+      }
+    })();
+  </script>
 </body>
 </html>

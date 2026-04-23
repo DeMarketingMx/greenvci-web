@@ -100,7 +100,7 @@
     </nav>
     <div style="display:flex; align-items:center; gap:20px">
       <div class="nav__lang"><button class="active">ES</button><button>EN</button><button>KO</button></div>
-      <a href="contacto.html" class="nav__cta">Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="contacto.html" class="nav__cta" data-i18n="nav.cta">Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 </header>
@@ -135,7 +135,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
             </div>
             <div>
-              <h4>Teléfono</h4>
+              <h4 data-i18n="home.contact.phone.label">Teléfono</h4>
               <p><a href="tel:+82318043-5568">+82) 31-8043-5568</a></p>
             </div>
           </div>
@@ -144,7 +144,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
             </div>
             <div>
-              <h4>Email</h4>
+              <h4 data-i18n="home.contact.email.label">Email</h4>
               <p><a href="mailto:info@greenvci.com">info@greenvci.com</a></p>
             </div>
           </div>
@@ -176,7 +176,7 @@
         <form action="#" method="POST" onsubmit="handleSubmit(event)">
           <div class="cf-row">
             <div class="cf-group">
-              <label>Nombre *</label>
+              <label data-i18n="home.contact.name">Nombre *</label>
               <input type="text" name="nombre" placeholder="Tu nombre" required>
             </div>
             <div class="cf-group">
@@ -186,7 +186,7 @@
           </div>
           <div class="cf-row">
             <div class="cf-group">
-              <label>Empresa *</label>
+              <label data-i18n="home.contact.company">Empresa *</label>
               <input type="text" name="empresa" placeholder="Nombre de tu empresa" required>
             </div>
             <div class="cf-group">
@@ -196,11 +196,11 @@
           </div>
           <div class="cf-row">
             <div class="cf-group">
-              <label>Email *</label>
+              <label data-i18n="home.contact.email.f">Email *</label>
               <input type="email" name="email" placeholder="tu@empresa.com" required>
             </div>
             <div class="cf-group">
-              <label>Teléfono</label>
+              <label data-i18n="home.contact.phone.f">Teléfono</label>
               <input type="tel" name="telefono" placeholder="+52 55 0000 0000">
             </div>
           </div>
@@ -296,11 +296,11 @@
     <div class="footer__grid">
       <div class="footer__brand">
         <a href="index.html" class="nav__logo" style="color:#FFF"><span class="nav__logo-mark">G</span><span>GreenVCI</span></a>
-        <p>Líderes globales en tecnología VCI sostenible desde 1994.</p>
+        <p data-i18n="footer.brand.lede">Líderes globales en tecnología VCI sostenible desde 1994.</p>
       </div>
-      <div class="footer__col"><h5>Productos</h5><a href="productos/vci-film.html">VCI Film</a><a href="productos/vci-polvo.html">VCI Polvo</a><a href="productos/vci-masterbatch.html">VCI Masterbatch</a><a href="productos/vci-emisor.html">VCI Emisor</a><a href="productos/vci-liquido.html">VCI Líquido</a><a href="productos/vci-papel.html">VCI Papel</a></div>
-      <div class="footer__col"><h5>Empresa</h5><a href="nosotros.html">Nosotros</a><a href="certificaciones.html">Certificaciones</a><a href="noticias.html">Noticias</a><a href="carreras.html">Carreras</a><a href="distribuidores.html">Distribuidores</a></div>
-      <div class="footer__col"><h5>Soporte</h5><a href="contacto.html">Contacto</a><a href="fichas-tecnicas.html">Fichas Técnicas</a><a href="faq.html">FAQ</a><a href="recursos.html">Recursos</a></div>
+      <div class="footer__col"><h5 data-i18n="footer.col.products">Productos</h5><a href="productos/vci-film.html">VCI Film</a><a href="productos/vci-polvo.html">VCI Polvo</a><a href="productos/vci-masterbatch.html">VCI Masterbatch</a><a href="productos/vci-emisor.html">VCI Emisor</a><a href="productos/vci-liquido.html">VCI Líquido</a><a href="productos/vci-papel.html">VCI Papel</a></div>
+      <div class="footer__col"><h5 data-i18n="footer.col.company">Empresa</h5><a href="nosotros.html" data-i18n="footer.about">Nosotros</a><a href="certificaciones.html" data-i18n="footer.certs">Certificaciones</a><a href="noticias.html" data-i18n="footer.news">Noticias</a><a href="carreras.html" data-i18n="footer.careers">Carreras</a><a href="distribuidores.html" data-i18n="footer.distributors">Distribuidores</a></div>
+      <div class="footer__col"><h5 data-i18n="footer.col.support">Soporte</h5><a href="contacto.html" data-i18n="footer.contact">Contacto</a><a href="fichas-tecnicas.html" data-i18n="footer.datasheets">Fichas Técnicas</a><a href="faq.html" data-i18n="footer.faq">FAQ</a><a href="recursos.html" data-i18n="footer.resources">Recursos</a></div>
     </div>
     <div class="footer__bottom"><div>© 2026 GreenVCI R&amp;D Co., Ltd. · Hwaseong-si, Gyeonggi-do, República de Corea</div></div>
   </div>
