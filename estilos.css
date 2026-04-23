@@ -1315,3 +1315,76 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .lab-spotlight__content { padding: 48px 28px; }
   .lab-spotlight__stats { grid-template-columns: 1fr; gap: 24px; }
 }
+
+/* ── LANGUAGE SWITCHER ─────────────────────────────── */
+#lang-switcher {
+  position: fixed;
+  bottom: 28px;
+  left: 28px;
+  z-index: 9999;
+  font-family: var(--f-body);
+}
+.ls-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(18, 26, 20, 0.88);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 12px;
+  padding: 9px 14px;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background 0.2s, border-color 0.2s;
+  color: #fff;
+}
+.ls-btn:hover {
+  background: rgba(45, 106, 79, 0.9);
+  border-color: rgba(255,255,255,0.25);
+}
+.ls-flag { font-size: 16px; line-height: 1; }
+.ls-code { font-size: 12px; font-weight: 700; letter-spacing: .06em; color: #fff; }
+.ls-arrow { opacity: 0.6; transition: transform 0.2s; flex-shrink: 0; }
+.ls-btn[aria-expanded="true"] .ls-arrow { transform: rotate(180deg); }
+
+.ls-menu {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 0;
+  background: rgba(12, 20, 16, 0.96);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 6px;
+  min-width: 148px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 0.18s, transform 0.18s, visibility 0.18s;
+}
+.ls-menu--open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.ls-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 9px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s;
+  color: rgba(255,255,255,0.72);
+  font-family: var(--f-body);
+}
+.ls-option:hover { background: rgba(45,106,79,0.35); color: #fff; }
+.ls-option--active { background: rgba(45,106,79,0.25); color: #fff; }
+.ls-option .ls-flag { font-size: 17px; }
+.ls-option .ls-label { font-size: 13px; font-weight: 600; letter-spacing: .04em; }
