@@ -660,7 +660,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .vci-cycle {
   position: relative;
   width: 100%;
-  height: 420px;
+  height: 620px;
   display: flex;
   align-items: center;
   justify-content: center;
